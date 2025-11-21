@@ -1,0 +1,128 @@
+body {
+  transition: background-color .35s, color .35s;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+:root {
+  --primary: #4CAF50;
+  --bg: #ffffff;
+  --text: #0f0f0f;
+}
+
+.btn-success {
+  background: var(--primary);
+  border-color: var(--primary);
+
+}
+
+.background {
+  background-image: url('https://i.pinimg.com/1200x/45/26/af/4526af3af8a76d7dba75db8e04778750.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  height: 100%;
+}
+
+.card {
+  border: none;
+}
+
+@media (max-width:576px) {
+  header .display-5 {
+    font-size: 1.6rem;
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.alert.success {
+  background-color: rgba(76, 175, 80, 0.12);
+  border-color: rgba(76, 175, 80, 0.2);
+  color: #1b5e20;
+}
+
+.alert.warning {
+  background-color: rgba(255, 193, 7, 0.08);
+  border-color: rgba(255, 193, 7, 0.2);
+  color: #856404;
+}
+
+.alert.danger {
+  background-color: rgba(244, 67, 54, 0.08);
+  border-color: rgba(244, 67, 54, 0.2);
+  color: #7b1e19;
+}
+
+.bmi-gauge-container {
+  width: 280px;
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.bmi-gauge-pro {
+  max-width: 280px;
+  margin: 0 auto;
+  position: relative;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15));
+}
+
+.bmi-gauge-pro svg {
+  overflow: visible;
+}
+
+.bmi-gauge-pro text {
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+#bmiValueDisplay {
+  transition: all 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+#bmiNeedle {
+  transform-origin: 130px 130px;
+  transition: transform 1s ease-in-out;
+}
+
+#bmiNeedle {
+  transform: rotate(-90deg);
+}
+
+
+#autoCategory {
+  text-align: center;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none !important;
+  background-color: #f8f9fa;
+  cursor: default;
+}
+
+#autoCategory::-ms-expand {
+  display: none;
+}
+
+.navbar-brand span {
+  letter-spacing: .2px;
+}
+
+footer a {
+  color: inherit;
+  opacity: 0.85;
+}
